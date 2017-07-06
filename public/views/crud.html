@@ -1,0 +1,71 @@
+<a href="#/crud"></a>
+<div ng-init="getData()">
+
+    <div class="container">
+        <div class="row text-center ">
+            <h1 class="crud">My CRUD PAGE</h1>
+            <div class="col-md-4 col-md-offset-2 inputCrud">
+                <input type="text" class="form-control" placeholder="img" ng-model="img">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control inputCrud" placeholder="name" ng-model="name">
+            </div>
+            <div class="col-md-4 col-md-offset-2">
+                <input type="text" class="form-control inputCrud" placeholder="price" ng-model="price">
+                
+            </div>
+            <div class="col-md-4 col-md-offset-2 inputCrud">
+                <input type="text" class="form-control" placeholder="description" ng-model="description">
+            </div>
+            <div class="col-md-4">
+                <select class="form-control inputCrud" ng-model="collectionType">
+				<option value="" disabled selected>Select a collection</option>
+				<option value=""></option>
+				<option value="">Dresses</option>
+				<option value="jackets">Jackets</option>
+				<option value="bags">Bags</option>
+				<option value="shoes">Shoes</option>
+			</select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <button class="btn btn-primary btnCrud" ng-click="btn()">Add</button>
+
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div ng-repeat="x in collection">
+
+                <div class="col-md-4">
+                    <div ng-show="edit">
+                        <img class="imgCrud" ng-src='{{x.img}}'>
+                        <div>{{x.name}}</div>
+                        <div>{{x.price}}</div>
+                        <div>{{x.description}}</div>
+                        <div>{{x.collectionType}}</div>
+                        <button class="btn btn-success" ng-click="edit=!edit">Edit</button>
+                        <button class="btn btn-danger" ng-click="remove(x._id)">delete</button>
+                    </div>
+                    <div ng-hide="edit">
+                        <input class="form-control" placeholder="img" ng-model="x.img">
+                        <input class="form-control" type="text" placeholder="name" ng-model="x.name">
+                        <input class="form-control" type="text" placeholder="price" ng-model="x.price">
+                        <input class="form-control" type="text" placeholder="description" ng-model="x.description">
+                        <select ng-model="x.collectionType">
+							<option value="blouses">Blouses</option>
+				<option value="dresses">Dresses</option>
+				<option value="jackets">Jackets</option>
+				<option value="bags">Bags</option>
+				<option value="shoes">Shoes</option>
+						</select>
+                        <button class="btn btn-warning" ng-click="update() ; edit=!edit">Submit</button>
+                        <a class="btn btn-danger" ng-click="remove(x._id)">Delete</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
