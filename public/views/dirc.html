@@ -1,0 +1,28 @@
+<ul class="nav navbar-nav">
+    <li><a class="alinks" href="#">Home</a></li>
+    <li><a class="alinks" href="#">contact us</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+    <li ng-hide="userService.isAuthenticated()"><a class="alinks" href="#/login">Login</a></li>
+    <li ng-hide="userService.isAuthenticated()"><a class="alinks" href="#/signup">Signup</a></li>
+    <li ng-show="userService.isAuthenticated()"><a class="alinks" href="#/logout">Logout</a></li>
+</ul>
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12 navpage">
+            <div>
+                <h1 class="line1">NAME OF COMPANEY</h1>
+                <p class="line2">THE BEST FURNITURE, FROM CLASSIC</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="anav" href="#/bedroom">Bedroom</a></li>
+                    <li><a class="anav" href="#/diningroom">dining room</a></li>
+                    <li><a class="anav" href="#/livingroom">living room</a></li>
+                    <li><a class="anav" href="#">contact_info</a></li>
+                    <li><a class="anav" href="#">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
