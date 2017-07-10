@@ -1,0 +1,69 @@
+
+nav{
+   width:1024px;
+   margin:20px 0 0 0;
+}
+nav ul li{
+    background:#424242;
+    width:190px;
+    line-height:40px;
+    list-style:none;
+    display:inline-block;
+    text-align:center;
+}
+.anav{
+    text-decoration:none;
+    color:black;
+}
+.anav:hover{
+   color:red;
+    text-decoration: none;
+    transition:1.5s;
+}
+
+body{
+    background-color: #757575!important;
+}
+.page1{
+    text-align: center;
+    margin-top: 70px !important;
+    
+}
+.anotherpage1{
+    margin-top: 80px;
+    
+}
+.line1{
+font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    color: aliceblue;
+}
+.line2{
+    font-size: 14px;
+    color: aliceblue;
+}
+.fa{
+    margin-right: 10px
+}
+.borderpage1{
+    color: white;
+    
+    
+}
+.boxes{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px
+}
+.alinks{
+    color: white !important;
+    
+}
+.alinks:hover{
+    color: white !important;
+    text-decoration: none !important
+}
+.navpic{
+    text-align: center;
+    
+}

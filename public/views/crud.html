@@ -21,10 +21,11 @@
                 <select class="form-control inputCrud" ng-model="collectionType">
 				<option value="" disabled selected>Select a collection</option>
 				<option value=""></option>
-				<option value="">Dresses</option>
-				<option value="jackets">Jackets</option>
-				<option value="bags">Bags</option>
-				<option value="shoes">Shoes</option>
+				<option value="home">Home</option>
+				<option value="livingroom">Living Room</option>
+				<option value="diningroom">Dining Room</option>
+				<option value="bedroom">Bedroom</option>
+               
 			</select>
             </div>
         </div>
@@ -54,11 +55,11 @@
                         <input class="form-control" type="text" placeholder="price" ng-model="x.price">
                         <input class="form-control" type="text" placeholder="description" ng-model="x.description">
                         <select ng-model="x.collectionType">
-							<option value="blouses">Blouses</option>
-				<option value="dresses">Dresses</option>
-				<option value="jackets">Jackets</option>
-				<option value="bags">Bags</option>
-				<option value="shoes">Shoes</option>
+							<option value="home">Home</option>
+				<option value="livingroom">Living Room</option>
+				<option value="diningroom">Dining Room</option>
+				<option value="bedroom">Bedroom</option>
+				
 						</select>
                         <button class="btn btn-warning" ng-click="update() ; edit=!edit">Submit</button>
                         <a class="btn btn-danger" ng-click="remove(x._id)">Delete</a>
